@@ -17,7 +17,7 @@ body {
 }
 
 #header {
-	border: 4px #006600 solid;
+	border: 4px #009300 solid;
 	margin: auto;
 	width: 1200px;
 	/*height: 400px;*/
@@ -38,7 +38,7 @@ body {
 	margin-left: 45px;
 	margin-top: 50px;
 	/*border: 1px white solid;*/
-	color: #006600;
+	color: #009300;
 	
 }
 
@@ -46,7 +46,7 @@ body {
 	/*display: inline;*/
 	font-family: Courier;
 	font-size: 50px;
-	color: #006600;
+	color: #009300;
 	margin-top: 50px;
 	/*border: 1px white solid;*/
 	float: left;
@@ -114,7 +114,7 @@ body {
 }
 
 #posts_wrapper {
-	border: 5px #006600 solid;
+	border: 5px #009300 solid;
 	background: white;
 	width: 950px;
 	min-height: 500px;
@@ -147,7 +147,7 @@ body {
 }
 
 #footer {
-	border: 4px #006600 solid;
+	border: 4px #009300 solid;
 	margin: auto;
 	margin-top: 20px;
 	width: 1200px;
@@ -176,7 +176,7 @@ div {
 	/*display: none;*/
 	background: white;
 	position: relative;
-	border: 3px #006600 solid;
+	border: 3px #009300 solid;
 	font-size: 23px;
 	font-weight: bold;
 	margin: 5px 0px 5px 5px;
@@ -197,7 +197,7 @@ div {
 }
 
 #sbb1 {
-	border: 5px #006600 solid;
+	border: 5px #009300 solid;
 	background-color: white;
 }
 
@@ -206,7 +206,7 @@ div {
 	text-align: center;
 	font-size: 20px;
 	padding-top: 7px; 
-	border: 5px #006600 solid;
+	border: 5px #009300 solid;
 	width: 90%;
 	margin: 20px 0px 0px 5px ;
 	height: 25px;
@@ -216,19 +216,32 @@ div {
 	height: auto;
 }
 
-#right_widget {
+/*#right_widget {
 	/*border: 2px red solid;*/
 	float: right;
 	position: fixed;
 	height: 300px;
 	width: 270px;
 	margin-top: 50px;
+}*/
+
+#sbb1 p {
+	word-wrap: break-word;
+	
+	-ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */ 
+     word-break: break-word;
+
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;     
 }
 
 #nav_buttons {
 	height: 35px;
 	width: 150px;
-	border: 5px solid #006600;
+	border: 5px solid #009300;
 	margin-left: 5px;
 	margin-right: 5px;
 	padding: 2px 2px 2px 2px;
@@ -254,7 +267,7 @@ div {
 }*/
 
 a {
-	color: #006600;
+	color: #009300;
 	text-decoration: none;
 }
 
@@ -262,12 +275,23 @@ a {
 	/*border: 1px black solid;*/
 	font-family: Courier;
 	text-align: center;
-	color: #006600;
+	color: #009300;
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 40px;
 }
 
+.galleria {
+	margin: 70px 20px 0px 20px;
+	width: 900px; 
+	height: 700px; 
+	background: #000;
+	z-index: -1;
+}
+
+.bxslider {
+	height: 380px;
+}
 
 /*a:link {
 	text-decoration: none;

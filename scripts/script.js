@@ -3,8 +3,9 @@ $(document).ready(function() {
    
    $('.bxslider').bxSlider({
 	  mode: 'fade',
-	  auto: true,
-  	  autoControls: true
+  	  autoControls: true,
+  	  video: true,
+  	  useCSS: false
 	});
    
    $('.bxslider').bxSlider();
@@ -49,6 +50,16 @@ $(document).ready(function() {
 			$(this).find('.submenu').slideToggle(); 
 		});
    
+   $('#game_screen').attr("src","");
+   
+   $('#start_game').click(function() {
+   		$('#game_screen').slideDown();
+   		$('#game_screen').attr("src","AlienShooter/index.html");
+   		
+   		$('body, html').animate({
+    		scrollTop: ($('#game_screen').offset().top)
+		},500);
+   });
 });
 
 
