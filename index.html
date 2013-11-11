@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Miloš Stojanović</title>
+		<title>Miloš Stojanović - lična prezentacija</title>
 		
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="bxslider-4-master/jquery.bxslider.css" rel="stylesheet" type="text/css" />
@@ -43,7 +43,11 @@
 						
 						<li> <a href="opensource.html"><div id="nav_buttons">OSS</div></a> </li>
 						<li> <a href="linkovi.html"><div id="nav_buttons">LINKOVI</div></a> </li>
-						<li> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a> </li>
+						<li class="dropdown"> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a>
+							<ul class="submenu">
+								<li> <a href="newsletter.html"><div id="nav_buttons">Newsletter</div></a> </li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				
@@ -79,6 +83,7 @@
 					
 					<div id="expand1" class="expand">Info</div>
 						<div id="sbb1" class="sbb_wrapper">
+							<p id="date" class="info"></p>
 							<p id="os" class="info"></p>
 							<p id="browser" class="info"></p>
 							<p id="url" class="info"></p>

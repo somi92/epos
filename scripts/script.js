@@ -45,8 +45,6 @@ $(document).ready(function() {
    });
    
    $('.dropdown').hover(function() {
-                        // When the event is triggered, grab the current element 'this' and
-                        // find it's children '.sub_navigation' and display/hide them
 			$(this).find('.submenu').slideToggle(); 
 		});
    

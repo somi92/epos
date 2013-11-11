@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Miloš Stojanović</title>
+		<title>Miloš Stojanović - lična prezentacija</title>
 		
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="bxslider-4-master/jquery.bxslider.css" rel="stylesheet" type="text/css" />
@@ -15,6 +15,18 @@
 	</head>
 
 	<body>
+		
+		
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/sr_RS/all.js#xfbml=1";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+		
+		
 		<div id="wrapper">
     		
     		<div id="header">
@@ -40,7 +52,11 @@
 						
 						<li> <a href="opensource.html"><div id="nav_buttons">OSS</div></a> </li>
 						<li> <a href="linkovi.html"><div id="nav_buttons">LINKOVI</div></a> </li>
-						<li> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a> </li>
+						<li class="dropdown"> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a>
+							<ul class="submenu">
+								<li> <a href="newsletter.html"><div id="nav_buttons">Newsletter</div></a> </li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				
@@ -122,6 +138,8 @@
 				    		
 				    	<p style="font: italic"><a href="http://opensource-srbija.org/otvoreni-kod/" target="_blank" style="text-decoration: none; font-size: 20px;">Izvor: Open Source Srbija</a></p>
 				    	
+				    	<div class="fb-share-button" data-href="http://opensource-srbija.org/otvoreni-kod/" data-type="button_count"></div>
+				    	
 				    </div>
 				</div>
 				
@@ -137,6 +155,7 @@
 					
 					<div id="expand1" class="expand">Info</div>
 						<div id="sbb1" class="sbb_wrapper">
+							<p id="date" class="info"></p>
 							<p id="os" class="info"></p>
 							<p id="browser" class="info"></p>
 							<p id="url" class="info"></p>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Miloš Stojanović</title>
+		<title>Miloš Stojanović - lična prezentacija</title>
 		
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="bxslider-4-master/jquery.bxslider.css" rel="stylesheet" type="text/css" />
@@ -11,6 +11,7 @@
         <script type="text/javascript" src="bxslider-4-master/jquery.bxslider.min.js"></script>
         <script type="text/javascript" src="scripts/terminal_title.js"></script>
         <script type="text/javascript" src="scripts/script.js"></script>
+		<script type="text/javascript" src="scripts/validation.js"></script>
 		
 	</head>
 
@@ -40,7 +41,11 @@
 						
 						<li> <a href="opensource.html"><div id="nav_buttons">OSS</div></a> </li>
 						<li> <a href="linkovi.html"><div id="nav_buttons">LINKOVI</div></a> </li>
-						<li> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a> </li>
+						<li class="dropdown"> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a>
+							<ul class="submenu">
+								<li> <a href="newsletter.html"><div id="nav_buttons">Newsletter</div></a> </li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				
@@ -52,6 +57,27 @@
 				<div id="posts_wrapper">
 					
 				    <div id="post">
+				    	
+				    	<p>Ukoliko imate pitanja, predloge ili kritike popunite sledeću formu. <br /> (* polja su obavezna)</p>
+				    	
+				    	<form id="mail" onsubmit="return validacija()" style="margin: 10px 0px 20px 20px;">
+				    		
+				    		<p>Ime (*):</p>
+				    		<input type="text" name="ime" value="" />
+				    		<p>Prezime (*):</p>
+				    		<input type="text" name="prezime" value="" />
+				    		<p>E-mail adresa (*):</p>
+				    		<input type="email" name="email" value="" />
+				    		
+				    		<p>Naslov poruke:</p>
+				    		<input type="text" name="naslov" value="" />
+				    		<p>Tekst poruke (*):</p>
+				    		<textarea name="poruka" form="mail" rows="15" cols="90" maxlength="1500"></textarea>
+				    		
+				    		<br />
+				    		<input type="submit" name="posalji" value="Pošalji" />
+				    		
+				    	</form>
 				    	
 				    </div>
 				</div>
@@ -68,6 +94,7 @@
 					
 					<div id="expand1" class="expand">Info</div>
 						<div id="sbb1" class="sbb_wrapper">
+							<p id="date" class="info"></p>
 							<p id="os" class="info"></p>
 							<p id="browser" class="info"></p>
 							<p id="url" class="info"></p>

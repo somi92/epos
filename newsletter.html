@@ -11,7 +11,7 @@
         <script type="text/javascript" src="bxslider-4-master/jquery.bxslider.min.js"></script>
         <script type="text/javascript" src="scripts/terminal_title.js"></script>
         <script type="text/javascript" src="scripts/script.js"></script>
-        <script src="galleria/galleria-1.3.2.min.js"></script>
+		<script type="text/javascript" src="scripts/validation.js"></script>
 		
 	</head>
 
@@ -46,6 +46,7 @@
 								<li> <a href="newsletter.html"><div id="nav_buttons">Newsletter</div></a> </li>
 							</ul>
 						</li>
+						
 					</ul>
 				</div>
 				
@@ -58,29 +59,24 @@
 					
 				    <div id="post">
 				    	
-				    	<h3>Dobrodošli u galeriju!</h3>
-				    	<div class="galleria">
-				    		<img src="images/img8.jpg" data-title="Wingsuit" />
-						    <img src="images/img1.jpg" data-title="Most Rion Antirion" data-big="/img/big1.jpg" />
-						   	<img src="images/img2.jpg" data-title="Acropolis Athens" />
-						   	<img src="images/img12.jpg" data-title="2 way" />
-						   	<img src="images/img3.jpg" data-title="Maja i Miloš" />
-						   	<img src="images/img4.jpg" data-title="Rijeka Tara" />
-						   	<img src="images/img9.jpg" data-title="Skydiving" />
-						   	<img src="images/img5.jpg" data-title="Maja i Miloš" />
-						   	<img src="images/img6.jpg" data-title="Korintski kanal" />
-						   	<img src="images/img7.jpg" data-title="Penjanje na Kozari" />
-						   	<img src="images/img10.jpg" data-title="Vuk" />
-						   	<img src="images/img11.jpg" data-title="Relative work" />
-						</div>
+				    	<p>Ukoliko vam se sajt dopada i želite da primate obaveštenja o novim sadržajima, popunite sledeću formu:</p>
 				    	
-				    	<script>
-						    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-						    Galleria.run('.galleria');
-						    Galleria.configure({
-							    transition: 'fade'
-							});
-						</script>
+				    	<form id="newsletter" onsubmit="return newsletter()" style="margin: 10px 0px 20px 20px;">
+				    		
+				    		<p>Email:</p>
+				    		<input type="email" name="email" value="" />
+				    		<br />
+				    		<br />
+				    		<input type="checkbox" name="tema" checked="checked" />Obavesti me o novim tekstovima<br />
+				    		<input type="checkbox" name="tema" checked="checked" />Obavesti me o novim slikama<br />
+				    		<input type="checkbox" name="tema" checked="checked" />Obavesti me o novim igricama<br />
+				    		<input type="checkbox" name="tema" checked="checked" />Obavesti me o novim linkovima<br />
+				    		<input type="button" name="oznaci" value="Obriši" onclick="this.value=opcije(this.form.tema)" />
+				    		<br />
+				    		<br />
+				    		<input type="submit" name="prijavi" value="Prijavi se!" />
+				    		
+				    	</form>
 				    	
 				    </div>
 				</div>
@@ -105,7 +101,7 @@
 					
 					<div id="expand4" class="expand" style="cursor: pointer" onclick="history.back(-1)">prethodna stranica</div>
 						
-					<a href="galerija.html#header"><div id="expand3" class="expand">vrh stranice</div></a>
+					<a href="kontakt.html#header"><div id="expand3" class="expand">vrh stranice</div></a>
 			
 					<div id="expand5" class="expand">
 						<!-- START SOCIAL MEDIA WIDGET --><ul id="socialbar">

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Miloš Stojanović</title>
+		<title>Miloš Stojanović - lična prezentacija</title>
 		
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="bxslider-4-master/jquery.bxslider.css" rel="stylesheet" type="text/css" />
@@ -40,7 +40,11 @@
 						
 						<li> <a href="opensource.html"><div id="nav_buttons">OSS</div></a> </li>
 						<li> <a href="linkovi.html"><div id="nav_buttons">LINKOVI</div></a> </li>
-						<li> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a> </li>
+						<li class="dropdown"> <a href="kontakt.html"><div id="nav_buttons">KONTAKT</div></a>
+							<ul class="submenu">
+								<li> <a href="newsletter.html"><div id="nav_buttons">Newsletter</div></a> </li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				
@@ -54,14 +58,17 @@
 				    <div id="post">
 				    	
 				    	<h3>Tehnologija, programiranje, edukacija:</h3>
-				    	<p><a class="links">Mashable - web portal o savremenim tehnologijama i društvenim mrežama.</a></p>
-				    	<p><a class="links">Code Academy - online kurs web tehnologija za početnike.</a></p>
-				    	<p><a class="links">W3 Schools - web tutoriali</a></p>
-				    	<p><a class="links">Tutorials Point - zbirka tutoriala raznih tehnologija</a></p>
-				    	<p><a class="links">Coursera - online kursevi</a></p>
-				    	<p><a class="links"></a></p>
-				    	<h3>Tehnologija i programiranje:</h3>
-				    	<h3></h3>
+				    	<p><a class="links" href="http://mashable.com" target="_blank">Mashable - web portal o savremenim tehnologijama i društvenim mrežama.</a></p>
+				    	<p><a class="links" href="http://codeacademy.com" target="_blank">Code Academy - online kurs web tehnologija za početnike.</a></p>
+				    	<p><a class="links" href="http://stackoverflow.com/" target="_blank">Stack Overflow - Q&A sajt za programere</a></p>
+				    	<p><a class="links" href="http://w3schools.com" target="_blank">W3 Schools - web tutoriali</a></p>
+				    	<p><a class="links" href="http://www.tutorialspoint.com/" target="_blank">Tutorials Point - zbirka tutoriala raznih tehnologija</a></p>
+				    	<p><a class="links" href="http://coursera.org" target="_blank">Coursera - online kursevi</a></p>
+				    	<p><a class="links" href="https://www.khanacademy.org/" target="_blank">Khan Academy - online kursevi</a></p>
+				    	<p><a class="links" href="http://www.ntu.edu.sg/home/ehchua/programming/" target="_blank">Programming Notes</a></p>
+				    	<h3>Blogovi:</h3>
+				    	<p><a class="links" href="http://ftw.rs" target="_blank">FTW, Ivan Minić</a></p>
+				    	<p><a class="links" href="http://theadventureblog.blogspot.com/" target="_blank">The Adventure Blog</a></p>
 				    	
 				    </div>
 				</div>
@@ -78,6 +85,7 @@
 					
 					<div id="expand1" class="expand">Info</div>
 						<div id="sbb1" class="sbb_wrapper">
+							<p id="date" class="info"></p>
 							<p id="os" class="info"></p>
 							<p id="browser" class="info"></p>
 							<p id="url" class="info"></p>
